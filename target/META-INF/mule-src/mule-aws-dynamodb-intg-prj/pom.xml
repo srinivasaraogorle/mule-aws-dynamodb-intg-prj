@@ -43,6 +43,12 @@
 						<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
 					<classifier>mule-application</classifier>
+					<sharedLibraries>
+						<sharedLibrary>
+							<groupId>org.mongodb</groupId>
+							<artifactId>mongodb-driver-legacy</artifactId>
+						</sharedLibrary>
+					</sharedLibraries>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -60,6 +66,17 @@
 			<artifactId>mule-sockets-connector</artifactId>
 			<version>1.2.2</version>
 			<classifier>mule-plugin</classifier>
+		</dependency>
+		<dependency>
+			<groupId>com.mulesoft.connectors</groupId>
+			<artifactId>mule-mongodb-connector</artifactId>
+			<version>6.3.7</version>
+			<classifier>mule-plugin</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongodb-driver-legacy</artifactId>
+			<version>4.0.4</version>
 		</dependency>
 	</dependencies>
 
